@@ -1,0 +1,24 @@
+https://clembod.itch.io/warrior-free-animation-set
+
+Idle : 6 frames 
+  0-5
+Run : 8 frames
+  6-13
+2 Combo attack : 12 frames
+  14-25
+Death  : 11 frames
+  26-36
+Hurt  : 4 fames
+  37-40
+Jump - UpToFall - Fall :  3 - 2 - 3 frames
+  41-43
+  44-46
+  47-49
+Edge Grab : 5 frames
+Edge Idle : 6 frames
+WallSlide : 3 frames
+Crouch : 6 frames
+Dash : 7 Frames
+Dash-Attack : 10 frames
+Slide : 5 Frames
+Ladder-Grab : 8 Frames
