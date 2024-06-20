@@ -12,13 +12,21 @@ Hurt  : 4 fames
   37-40
 Jump - UpToFall - Fall :  3 - 2 - 3 frames
   41-43
-  44-46
-  47-49
+  44-45
+  46-48
 Edge Grab : 5 frames
+  49-53
 Edge Idle : 6 frames
+  54-59
 WallSlide : 3 frames
+  60-62
 Crouch : 6 frames
+  63-68
 Dash : 7 Frames
+  69-75
 Dash-Attack : 10 frames
+  76-85
 Slide : 5 Frames
+  86-90
 Ladder-Grab : 8 Frames
+  91-98

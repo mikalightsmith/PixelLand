@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg001wtv7eugc"]
+[gd_scene load_steps=5 format=3 uid="uid://cg001wtv7eugc"]
 
 [ext_resource type="PackedScene" uid="uid://dfdkhxynmu1df" path="res://scenes/player.tscn" id="1_h7xfp"]
+[ext_resource type="PackedScene" uid="uid://dagv46ecxlpl6" path="res://scenes/box.tscn" id="2_62xtg"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_uav1y"]
 size = Vector2(1000, 100)
@@ -11,7 +12,7 @@ size = Vector2(467, 26)
 [node name="world" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_h7xfp")]
-position = Vector2(162, 120)
+position = Vector2(49, 159)
 jump_force = -300.0
 
 [node name="platform" type="StaticBody2D" parent="."]
@@ -130,3 +131,6 @@ mesh = SubResource("QuadMesh_uav1y")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform5"]
 position = Vector2(-2, -123)
 shape = SubResource("RectangleShape2D_rgn7a")
+
+[node name="box" parent="." instance=ExtResource("2_62xtg")]
+position = Vector2(-1, 100)
