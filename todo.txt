@@ -1,0 +1,17 @@
+== Ideas
+- projectiles
+- attack enemies (and it affects them)
+- enemies
+
+== Next (3)
+- use controller
+- spell projectile
+- multiplayer
+
+== Papa knows (2)
+- attack animation
+
+== Doing
+- crouching
+
+== Done
