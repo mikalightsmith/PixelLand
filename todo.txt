@@ -6,7 +6,6 @@
 - ability to die
 - taking fall damage from really high
 - far jumps when running
-- rename the game
 
 == Next (3)
 - enemies
@@ -21,5 +20,6 @@
 - spell projectile
 
 == Done
+- rename the game
 - crouching
 - melee attack animation

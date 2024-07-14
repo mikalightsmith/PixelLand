@@ -93,8 +93,8 @@ func update_animations(direction):
 				ap.play("fall")
 
 func set_direction(direction):
-	sprite.flip_h = (direction == -1)
-	sprite.position.x = direction * 7
+	sprite.flip_h = direction < 0
+	sprite.position.x = -7 if direction < 0 else 7
 
 func crouch():
 	if is_crouching:
