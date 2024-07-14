@@ -1,17 +1,25 @@
 == Ideas
 - projectiles
 - attack enemies (and it affects them)
-- enemies
+- make a level
+- run changes speed
+- ability to die
+- taking fall damage from really high
+- far jumps when running
+- rename the game
 
 == Next (3)
+- enemies
 - use controller
-- spell projectile
 - multiplayer
 
 == Papa knows (2)
-- attack animation
+
+== Today
 
 == Doing
-- crouching
+- spell projectile
 
 == Done
+- crouching
+- melee attack animation
