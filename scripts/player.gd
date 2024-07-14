@@ -40,6 +40,10 @@ func _physics_process(delta):
 		velocity.y = jump_force
 
 	var direction = Input.get_axis("move_left", "move_right")
+
+	if is_attacking:
+		direction = 0
+		
 	if direction:
 		velocity.x = direction * speed
 	else:
