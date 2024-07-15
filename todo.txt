@@ -8,18 +8,18 @@
 - far jumps when running
 
 == Next (3)
-- enemies
-- use controller
 - multiplayer
 
 == Papa knows (2)
+- enemies
+- spell projectile
 
 == Today
 
 == Doing
-- spell projectile
 
 == Done
+- use controller
 - rename the game
 - crouching
 - melee attack animation
