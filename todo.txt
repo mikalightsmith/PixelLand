@@ -11,12 +11,12 @@
 - multiplayer
 
 == Papa knows (2)
-- enemies
 - spell projectile
 
 == Today
 
 == Doing
+- enemies
 
 == Done
 - use controller
