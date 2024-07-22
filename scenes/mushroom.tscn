@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/mushroom.gd" id="1_hki7r"]
 [ext_resource type="Texture2D" uid="uid://b586jykoyckhl" path="res://assets/mushroom/Mushroom-Idle.png" id="2_hf3im"]
-[ext_resource type="Shape2D" uid="uid://ca78jjl26wxg1" path="res://resources/warrior_standing_cshape.tres" id="3_4uwyb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jivaa"]
+size = Vector2(21, 31)
 
 [sub_resource type="Animation" id="Animation_y0iaq"]
 length = 0.001
@@ -118,21 +120,38 @@ _data = {
 script = ExtResource("1_hki7r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
 position = Vector2(0, -32)
 texture = ExtResource("2_hf3im")
 hframes = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -15.25)
-shape = ExtResource("3_4uwyb")
+position = Vector2(-0.5, -15.5)
+shape = SubResource("RectangleShape2D_jivaa")
 
-[node name="crouch_raycast_1" type="RayCast2D" parent="."]
-position = Vector2(-7, -7)
-target_position = Vector2(0, -24)
+[node name="down_raycast_1" type="RayCast2D" parent="."]
+position = Vector2(-11, -15)
+target_position = Vector2(0, 16)
 
-[node name="crouch_raycast_2" type="RayCast2D" parent="."]
-position = Vector2(7, -8)
-target_position = Vector2(0, -23)
+[node name="down_raycast_2" type="RayCast2D" parent="."]
+position = Vector2(10, -15)
+target_position = Vector2(0, 16)
+
+[node name="right_raycast_1" type="RayCast2D" parent="."]
+position = Vector2(0, -31)
+target_position = Vector2(14, 0)
+
+[node name="right_raycast_2" type="RayCast2D" parent="."]
+position = Vector2(0, -2)
+target_position = Vector2(14, 0)
+
+[node name="left_raycast_1" type="RayCast2D" parent="."]
+position = Vector2(0, -31)
+target_position = Vector2(-15, 0)
+
+[node name="left_raycast_2" type="RayCast2D" parent="."]
+position = Vector2(0, -2)
+target_position = Vector2(-15, 0)
 
 [node name="AttackTimer" type="Timer" parent="."]
 wait_time = 0.4
