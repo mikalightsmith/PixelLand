@@ -29,11 +29,14 @@ func _physics_process(delta):
 		if velocity.y > 1000:
 			velocity.y = 1000
 
-	if direction == 1 && !down_raycast_2.is_colliding():
+	if direction == 1 && (!down_raycast_2.is_colliding() || right_raycast_1.is_colliding() || right_raycast_2.is_colliding()):
 		direction = -1
+		sprite.flip_h = false
 		
-	if direction == -1 && !down_raycast_1.is_colliding():
+	if direction == -1 && (!down_raycast_1.is_colliding() || left_raycast_1.is_colliding() || left_raycast_2.is_colliding()):
 		direction = 1
+		sprite.flip_h = true
+
 
 	velocity.x = speed * direction * 0.5	
 
@@ -50,6 +53,3 @@ func update_animations():
 		else:
 			ap.play("run")
 			
-func set_direction(direction):
-	sprite.flip_h = direction < 0
-	sprite.position.x = -7 if direction < 0 else 7
