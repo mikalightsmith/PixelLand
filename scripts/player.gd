@@ -10,6 +10,7 @@ extends CharacterBody2D
 @onready var crouch_raycast_1 = $crouch_raycast_1
 @onready var crouch_raycast_2 = $crouch_raycast_2
 @onready var attack_timer = $AttackTimer
+@onready var wand = $Sprite2D/wand
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -29,6 +30,10 @@ func _physics_process(delta):
 		if velocity.y > 1000:
 			velocity.y = 1000
 
+	if Input.is_action_just_pressed("cast_spell"):
+		cast_spell()
+		
+	
 	if Input.is_action_just_pressed("attack"):
 		is_attacking = true
 		attack_timer.start()
@@ -95,6 +100,10 @@ func update_animations(direction):
 				ap.play("jump")
 			elif velocity.y > 0:
 				ap.play("fall")
+				
+func cast_spell():
+	print("boom") 
+	wand.cast(sprite.scale.x)
 
 func set_direction(direction):
 	sprite.flip_h = direction < 0

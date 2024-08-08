@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://dfdkhxynmu1df"]
+[gd_scene load_steps=14 format=3 uid="uid://dfdkhxynmu1df"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_uv1an"]
 [ext_resource type="Texture2D" uid="uid://by4lbjqieo5si" path="res://assets/textures/Warrior_SheetnoEffect.png" id="2_u2qg1"]
+[ext_resource type="Script" path="res://scripts/wand.gd" id="3_feplx"]
 [ext_resource type="Shape2D" uid="uid://ca78jjl26wxg1" path="res://resources/warrior_standing_cshape.tres" id="3_ld125"]
 
 [sub_resource type="Animation" id="Animation_bdg68"]
@@ -448,6 +449,10 @@ position = Vector2(7, -21)
 texture = ExtResource("2_u2qg1")
 hframes = 6
 vframes = 17
+
+[node name="wand" type="Marker2D" parent="Sprite2D"]
+position = Vector2(3, 3)
+script = ExtResource("3_feplx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2.08165e-12, -16)
